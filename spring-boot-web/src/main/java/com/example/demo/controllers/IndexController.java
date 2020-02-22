@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/intranet_InspectoriaPNP") 
 public class IndexController {
 
+	@GetMapping("/index")
+	public String index(){
+
+		return "index";		
+	}
+	
 	//@GetMapping(value="/index") 
 	//@GetMapping({"/index", "/", "", "/home"})
 	@GetMapping({"/login", "/", ""})
@@ -47,5 +53,8 @@ public class IndexController {
 		return "usuario";		
 	}
 	
-	
 }
+
+
+
+

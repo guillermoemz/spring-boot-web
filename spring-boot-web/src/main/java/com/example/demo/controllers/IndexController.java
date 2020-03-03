@@ -38,6 +38,18 @@ public class IndexController {
 		return "register";		
 	}
 	
+	@GetMapping("/practice")
+	public String practice(){
+
+		return "practice";		
+	}
+	
+	@GetMapping("/formDirector")
+	public String formDirector(){
+
+		return "formularioDirector";		
+	}
+	
 	
 	@GetMapping("/usuario")
 	public String usuario(Model model){

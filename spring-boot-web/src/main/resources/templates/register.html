@@ -15,37 +15,113 @@
             <div id="layoutAuthentication_content">
                 <main>
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-7">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Crear Usuario</h3></div>
+                        <div class="row justify-content-center mt-5 pb-5">
+
+                            <!-- Logo PNP  --> 
+                            <div class="col col-lg-3 pt-5">
+                                <div >
+                                    <img class="card-img-top mt-5" src="/img/logo3PNP.png" alt="Card image cap" >    
+                                </div>                                
+                            </div>
+
+                            <div class="col col-lg-6">
+                                <div class="card shadow-lg border-0 rounded-lg">
+                                    <div class="card-header bg-dark">
+                                            <h3 class="text-white text-center my-4 login-head">CREAR USUARIO</h3>
+                                    </div>
                                     <div class="card-body">
                                         <form>
+
                                             <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group"><label class="small mb-1" for="inputFirstName">Nombres</label><input class="form-control py-4" id="inputFirstName" type="text" placeholder="Nombres Completos" /></div>
+                                                <div class="col col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="inputFirstName">Nombres</label>
+                                                        <input class="form-control py-4" id="inputFirstName" type="text" placeholder="Nombres Completos" />
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group"><label class="small mb-1" for="inputLastName">Apellidos</label><input class="form-control py-4" id="inputLastName" type="text" placeholder="Apellidos Completos" /></div>
+                                                <div class="col col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="inputLastApellidos">Apellidos</label>
+                                                        <input class="form-control py-4" id="inputLastApellidos" type="text" placeholder="Apellidos Completos" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Correo Electrónico</label><input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Correo Electrónico" /></div>
+											
                                             <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group"><label class="small mb-1" for="inputPassword">Contraseña</label><input class="form-control py-4" id="inputPassword" type="password" placeholder="Contraseña" /></div>
+                                                    <div class="dropdown col col-md-6">
+                                                        <label class="font-weight-bold control-label mb-1" for="jerarquiaPNP">Jerarquía</label>
+                                                        <select id="selectjerarquias" class="form-control">                                                            
+                                                            <!-- <option value="-1" disabled selected=""> Jerarquía</option> -->
+                                                            <option value="1"> Oficiales PNP</option>
+                                                            <option value="2"> Sub-Oficiales PNP</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="dropdown col col-md-6">
+                                                        <label class="font-weight-bold control-label mb-1" for="gradosPNP">Grado</label>
+                                                        <select id="selectgrados" class="form-control">
+                                                            <!-- <option value="-1" disabled selected=""> Grados</option> -->                                                            
+                                                            <option value="1">General PNP</option>
+                                                            <option value="2">Coronel PNP</option>
+                                                            <option value="3">Comandante PNP</option>
+                                                            <option value="4">Mayor PNP</option>
+                                                            <option value="5">Capitan PNP</option>
+                                                            <option value="6">Teniente PNP</option>
+                                                            <option value="7">Alferez PNP</option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+																						
+											<div class="form-row pt-2">												
+												<div class="col col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="numeroCIP">CIP</label>
+                                                        <input class="form-control py-4" id="numeroCIP" type="text" placeholder="CIP" />
+                                                    </div>
+                                                </div>		
+												<div class="col col-md-9">
+													<div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="inputEmailAddress">Correo Electrónico</label>
+                                                        <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Correo Electrónico" />
+                                                    </div>
+												</div>		
+											</div>
+											
+                                            <div class="form-row">
+                                                <div class="col col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="inputPassword">Contraseña</label>
+                                                        <input class="form-control py-4" id="inputPassword" type="password" placeholder="Contraseña" />
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group"><label class="small mb-1" for="inputConfirmPassword">Confirmar Contraseña</label><input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirmar Contraseña" /></div>
+                                                <div class="col col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="inputConfirmPassword">Confirmar Contraseña</label>
+                                                        <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirmar Contraseña" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="/intranet_InspectoriaPNP/login">Crear Usuario</a></div>
+
+                                            <!-- <div class="form-group mt-4 mb-0 d-flex align-items-center justify-content-between "> -->
+                                            <div class="form-group mt-4 mb-0 text-center">
+                                                    <a class="btn btn-dark text-white" href="/intranet_InspectoriaPNP/login">Crear Usuario</a>
+                                            </div>
+
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <div class="small"><a href="/intranet_InspectoriaPNP/register">¿Aún no tiene un usuario creado?</a></div>
+                                            <a class="small text-dark" href="/intranet_InspectoriaPNP/register">¿Aún no tiene un usuario creado?</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Logo IG PNP  --> 
+                            <div class="col col-lg-3 pt-5">
+                                <div >                                    
+                                    <img class="card-img-top mt-5" src="/img/logo3IG_PNP.png" alt="Card image cap" >
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </main>
@@ -67,5 +143,37 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" ></script>
         <script src="/js/scripts.js"></script>
+        <script language="javascript">
+
+        $(document).ready(function()
+        {
+            $("#selectjerarquias").on('change', function () 
+            {
+                    if($(this).val()==1)
+                    {
+                        $("#selectgrados option").remove();
+                        $("#selectgrados").append("<option value='1'>General PNP</option>");
+                        $("#selectgrados").append("<option value='2'>Coronel PNP</option>");
+                        $("#selectgrados").append("<option value='3'>Comandante PNP</option>");
+                        $("#selectgrados").append("<option value='4'>Mayor PNP</option>");
+                        $("#selectgrados").append("<option value='5'>Capitan PNP</option>");
+                        $("#selectgrados").append("<option value='6'>Teniente PNP</option>");
+                        $("#selectgrados").append("<option value='7'>Alferez PNP</option>");
+                    }
+                    else{
+                     $("#selectgrados option").remove();
+                        $("#selectgrados").append("<option value='1'>SS PNP</option>");
+                        $("#selectgrados").append("<option value='2'>SB PNP</option>");
+                        $("#selectgrados").append("<option value='3'>ST1 PNP</option>");
+                        $("#selectgrados").append("<option value='4'>ST2 PNP</option>");
+                        $("#selectgrados").append("<option value='5'>ST3 PNP</option>");
+                        $("#selectgrados").append("<option value='6'>S1 PNP</option>");
+                        $("#selectgrados").append("<option value='7'>S2 PNP</option>");   
+                        $("#selectgrados").append("<option value='8'>S3 PNP</option>");   
+                    }
+            });
+        });
+        </script>
+
     </body>
 </html>

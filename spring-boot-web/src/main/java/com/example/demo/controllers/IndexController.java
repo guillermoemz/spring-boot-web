@@ -46,42 +46,42 @@ public class IndexController {
 	}
 	
 	// RCG 
-	@GetMapping("RCG_2020")
-	public String RCG_2020(){	return "RCG_2020";	}
+	@GetMapping("/RCG_2020")
+	public String RCG_2020(){	return "/Normas/RCG_PNP/RCG_2020";	}
 	
 	@GetMapping("/RCG_2019")
-	public String RCG_2019(){	return "RCG_2019";	}
+	public String RCG_2019(){	return "/Normas/RCG_PNP/RCG_2019";	}
 	
 	@GetMapping("/RCG_2018")
-	public String RCG_2018(){	return "RCG_2018";	}
+	public String RCG_2018(){	return "/Normas/RCG_PNP/RCG_2018";	}
 	
 	// RD 
 	@GetMapping("/RD_2019")
-	public String RD_2019(){	return "RD_2019";	}
+	public String RD_2019(){	return "/Normas/RD_PNP/RD_2019";	}
 	
 	@GetMapping("/RD_2018")
-	public String RD_2018(){	return "RD_2018";	}
+	public String RD_2018(){	return "/Normas/RD_PNP/RD_2018";	}
 	
 	@GetMapping("/RD_2017")
-	public String RD_2017(){	return "RD_2017";	}
+	public String RD_2017(){	return "/Normas/RD_PNP/RD_2017";	}
 	
 	@GetMapping("/RD_2016")
-	public String RD_2016(){	return "RD_2016";	}
+	public String RD_2016(){	return "/Normas/RD_PNP/RD_2016";	}
 	
 	@GetMapping("/RD_2015")
-	public String RD_2015(){	return "RD_2015";	}
+	public String RD_2015(){	return "/Normas/RD_PNP/RD_2015";	}
 	
 	@GetMapping("/RD_2014")
-	public String RD_2014(){	return "RD_2014";	}
+	public String RD_2014(){	return "/Normas/RD_PNP/RD_2014";	}
 	
 	@GetMapping("/RD_2013")
-	public String RD_2013(){	return "RD_2013";	}
+	public String RD_2013(){	return "/Normas/RD_PNP/RD_2013";	}
 	
 	@GetMapping("/RD_2011")
-	public String RD_2011(){	return "RD_2011";	}
+	public String RD_2011(){	return "/Normas/RD_PNP/RD_2011";	}
 	
 	@GetMapping("/RD_2008")
-	public String RD_2008(){	return "RD_2008";	}
+	public String RD_2008(){	return "/Normas/RD_PNP/RD_2008";	}
 	
 	
 	@GetMapping("/usuario")

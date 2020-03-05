@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >RESOLUCIÓN DE LA COMANDANCIA GENERAL DE LA POLICÍA NACIONAL DEL PERÚ AÑO 2018</h3>
+				                    <br>
+				                    <br>
+				                    <br>
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">RCG Nº </th>
+										      <th class="text-left" scope="col" width="70%">SE RESUELVE :</th>									      
+										      <th class="text-left" scope="col" width="5%">PDF </th>
+										    </tr>
+										  </thead>
+										  <tbody>									  	
+										    <tr class="text-justify">									      
+										      <th scope="row">1</th>
+										      <td > <span class="font-weight-bold">RCG Nº 074-2018-COMGEN/EMG-PNP</span> de fecha 14NOV2018</td>																										
+										      <td>
+										      		<p>									      		
+											     	 	<span class="font-weight-bold">Artículo 1.-</span> Aprobar e incluir en el Reglamento General de Uniformes de la Policía Nacional del Perú, el Uniforme 
+											     	 	Táctico Camuflado para Operaciones en zonas Urbanas Negro o Noche y el Uniforme Táctico Camuflado Multi Entorno Rural, el cual será de uso exclusivo para 
+											     	 	el personal de la Policía Nacional del Perú perteneciente a la División Táctica Urbana - SUAT de la Policía Nacional del Perú, unidad dependiente orgánica 
+											     	 	y funcional de la Dirección de Operaciones Especiales de la Policía Nacional del Perú, conforme al anexo de la presente resolución.
+											     	</p>
+										      </td>
+										      <td>  
+										      		<a href="/PDF/RCG/RCG-2018/RCG_074_2018.pdf" > Abrir <a/>  
+										      </td>
+										      										      									      
+										    </tr>									    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

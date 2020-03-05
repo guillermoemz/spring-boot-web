@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >RESOLUCIÓN DIRECTORAL DE LA POLICÍA NACIONAL DEL PERÚ AÑO 2008</h3>
+				                    <br>
+				                    <br>
+				                    <br>
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">RD Nº </th>
+										      <th class="text-left" scope="col" width="70%">SE RESUELVE : </th>
+										      <th class="text-left" scope="col" width="5%">PDF </th>
+										    </tr>
+										  </thead>
+										  <tbody class="text-justify">
+										    
+										    <tr>									      
+										      <th scope="row">1</th>
+										      <td > <span class="font-weight-bold">RD Nº 799-DIRGEN/EMG</span> de fecha 26AGO2008</td>																										
+										      <td>										      					      	
+										      		<p>																																																																														      		
+											     	 	<span class="font-weight-bold">Artículo 1.-</span> Aprobar la Directiva que establece normas y procedimientos para determinar las condiciones
+											     	 	 de valor nutricional de la ración alimenticia, salubridad en el proceso de preparación y distribución, presentación y aseo del personal 
+											     	 	 encargado de la distribución, así como el manejo de los residuos alimenticios en los comedores de las distintas Unidades administrativas y 
+											     	 	 operativas de la Policía Nacional del Perú.    												     	 	 											      												     	
+											     	</p>
+										      </td>
+										      <td>  
+										      		<a href="/PDF/RD/RD-2008/RD_799_2008.pdf" > Abrir <a/>  
+										      </td>
+										    </tr>
+										    										    								    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

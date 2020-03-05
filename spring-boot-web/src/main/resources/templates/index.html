@@ -1,234 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Intranet Inspectoría General PNP</title>
-        <link href="/css/styles.css" rel="stylesheet" />
-        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" />                    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" ></script>
-    </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">DIR-INSP IG PNP</a>
-                    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#">
-                            <i class="fas fa-bars"></i>
-                    </button>
-                    <!-- Navbar Search-->
+<!--   <html lang="en">	-->
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
 
-            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2" />
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-
-            <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user fa-fw"></i>Usuario
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="#"><i class="fa fa-cogs" ></i> Configuración</a>
-						<a class="dropdown-item" href="#"><i class="fa fa-key" ></i> Cambiar Contraseña</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="login.html"><i class="fa fa-power-off" aria-hidden="true"></i> Salir</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    
-
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading"></div>
-                                <a class="nav-link" href="/intranet_InspectoriaPNP/formDirector">
-                                    <div class="sb-nav-link-icon">
-                                        <i class='far fa-address-card' style='font-size:24px;color:white'></i>
-                                        <p class="text-white">Comunicarse con el Director</p>
-                                    </div>
-                                </a>
-                            
-                            <div class="sb-sidenav-menu-heading">Menu</div>
-                            
-                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                    
-                                    <div class="sb-nav-link-icon">
-                                        <i class="fas fa-columns"></i>
-                                    </div>Inscritos
-
-                                    <div class="sb-sidenav-collapse-arrow">
-                                        <i class="fas fa-angle-down"></i>                                        
-                                    </div>
-                                        
-                                </a>                            
-                                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                          <a class="nav-link" href="layout-static.html">Oficiales PNP</a>
-                                          <a class="nav-link" href="layout-sidenav-light.html">Sub-Oficiales PNP</a>
-                                    </nav>
-                                </div>
-
-
-                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                    <div class="sb-nav-link-icon">
-                                        <i class="fas fa-book-open"></i>
-                                    </div>
-                                            Documentos digitales
-                                    <div class="sb-sidenav-collapse-arrow">
-                                        <i class="fas fa-angle-down">
-                                            
-                                        </i>
-                                    </div>
-                                </a>
-                                <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
-                                    <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                       
-                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">Lecturas de interés
-                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
-                                        <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                            <nav class="sb-sidenav-menu-nested nav">
-                                            	<a class="nav-link" href="login.html">Login</a>
-                                            	<a class="nav-link" href="register.html">Register</a>
-                                            	<a class="nav-link" href="password.html">Forgot Password</a>
-                                            </nav>
-                                        </div>
-                                        
-                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">RCG PNP
-                                            <div class="sb-sidenav-collapse-arrow">
-                                                <i class="fas fa-angle-down"></i>
-                                            </div>
-                                        </a>
-                                        <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                            <nav class="sb-sidenav-menu-nested nav">
-                                            	<a class="nav-link" href="401.html">Año 2020</a>
-                                            	<a class="nav-link" href="404.html">Año 2019</a>
-                                            	<a class="nav-link" href="500.html">Año 2018</a>
-                                            </nav>
-                                        </div>
-                                        
-                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError2" aria-expanded="false" aria-controls="pagesCollapseError2">RD PNP 
-                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
-                                        <div class="collapse" id="pagesCollapseError2" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                            <nav class="sb-sidenav-menu-nested nav">
-                                            	<a class="nav-link" href="405.html">Año 2019</a>
-                                            	<a class="nav-link" href="406.html">Año 2018</a>
-                                            	<a class="nav-link" href="507.html">Año 2017</a>
-                                            	<a class="nav-link" href="507.html">Año 2016</a>
-                                            	<a class="nav-link" href="507.html">Año 2015</a>
-                                            	<a class="nav-link" href="507.html">Año 2014</a>
-                                            	<a class="nav-link" href="507.html">Año 2013</a>
-                                            	<a class="nav-link" href="507.html">Año 2011</a>
-                                            	<a class="nav-link" href="507.html">Año 2008</a>
-                                            </nav>
-                                        </div>
-                                        
-                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError3" aria-expanded="false" aria-controls="pagesCollapseError3">Otras Dispositivos legales
-                                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
-                                        <div class="collapse" id="pagesCollapseError3" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                            <nav class="sb-sidenav-menu-nested nav">
-                                            	<a class="nav-link" href="/intranet_InspectoriaPNP/500.html">Decreto Legislativo</a>                                         
-                                                <!-- <a class="nav-link" href="500.html">Decretos Supremos</a> -->  
-                                            	<a class="nav-link" href="404.html">Ministerio del Interior</a>
-                                            	<a class="nav-link" href="401.html">Ministerio de Economía y Finanzas</a>
-                                            </nav>
-                                        </div>                                   
-                                     
-                                    </nav>                               
-                               
-                                </div>
-                            
-                            <!-- Esto es un comentario 		-->
-                            <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
-                                                        
-                                <a class="nav-link" href="charts.html">
-                                		<div class="sb-nav-link-icon">
-                                				<i class="fas fa-chart-area"></i>
-                                		</div>Cambiar Contraseña
-                                </a>
-
-                                <a class="nav-link" href="tables.html">
-                                		<div class="sb-nav-link-icon">
-                                				<i class="fas fa-table"></i>
-                                		</div>Salir
-                                </a>                          
-                        </div>
-                    </div>
-
-
-                    <div class="sb-sidenav-footer">
-                        <div class="small">José Isidro Baella Malca</div>  Teniente General PNP
-                    </div>
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid">
-                        <h1 class="mt-4">Inicio</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Bienvenido</li>
-                        </ol>	
-						<div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Lecturas Digitales</div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Otras Dispositivos Legales</div>
-                                    
-                                </div>
-                            </div>
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>		
+		<div id="layoutSidenav_content">
+			<main> 
+				<div class="container-fluid ">
+						<h1 class="mt-4">DIRECCIÓN DE INSPECCIONES</h1>
+						<ol class="breadcrumb mb-4">
+							<li class="breadcrumb-item font-weight-bold">INSPECTORÍA GENERAL DE LA POLICÍA NACIONAL DEL PERÚ</li>
+						</ol>
+						<div class="row font-weight-bold justify-content-center">
+							<div class="col-xl-3 col-md-6">
+								<div class="card bg-success text-white mb-4">
+									<div class="card-body">RESOLUCIONES DE LA COMANDANCIA GENERAL PNP</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-6">
+								<div class="card bg-danger text-white mb-4">
+									<div class="card-body">RESUCIONES DIRECTORALES PNP</div>	
+								</div>
+							</div>
 						</div>
-						<div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Resoluciones de la Comandancia General PNP</div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Resoluciones Directorales PNP</div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; 2020</div>
-                            <div>
-                                <a href="#">Inspectoría General de la Policía Nacional del Perú (PNP) - </a>                                
-                                <a href="#">Ministerio del Interior (MININTER)</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+	
+						<div class="row font-weight-bold justify-content-center">
+							<div class="col-xl-3 col-md-6">
+								<div class="card bg-primary text-white mb-4">
+									<div class="card-body">LECTURAS DIGITALES</div>	
+								</div>
+							</div>
+							
+							<div class="col-xl-3 col-md-6">
+								<div class="card bg-warning text-white mb-4">
+									<div class="card-body">OTROS DISPOSITIVOS LEGALES</div>
+	
+								</div>
+							</div>
+						</div>
+					</div>	
+			</main>
+            <footer th:replace="layout/layout :: footer"></footer>			
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-        <script src="/assets/demo/chart-area-demo.js"></script>
-        <script src="/assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-        <script src="/assets/demo/datatables-demo.js"></script>
-    </body>
+			
+		</div>
+		
+		
+	
+</body>
 </html>

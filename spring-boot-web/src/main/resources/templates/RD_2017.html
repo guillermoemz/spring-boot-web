@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >RESOLUCIÓN DIRECTORAL DE LA POLICÍA NACIONAL DEL PERÚ AÑO 2017</h3>
+				                    <br>
+				                    <br>
+				                    <br>
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">RD Nº </th>
+										      <th class="text-left" scope="col" width="70%">SE RESUELVE : </th>
+										      <th class="text-left" scope="col" width="5%">PDF </th>
+										    </tr>
+										  </thead>
+										  <tbody class="text-justify">
+										  										  											  				  	
+										    <tr>									      
+										      <th scope="row">2</th>
+										      <td > <span class="font-weight-bold">RD Nº 005-2017-DIREJADM-DIRECFIN-PNP/EM</span> de fecha 21ENE2017</td>																										
+										      <td>						      	
+										      		<p>									      		
+											     	 	<span class="font-weight-bold">Artículo 1.-</span> Aprobar el otorgamiento de ROUD con cargo al Presupuesto del AF-2017 de la Unidad Ejecutora 002-DIRECFIN-PNP,
+														Fuente de Financiamiento Recursos Ordinarios, Genérica de Gasto 2.3: "Bienes y Humano, Específica del Gasto 2.3.11.11 "Alimentos y Bebidas para Consumo Humano por 
+														el importe de S/. 41,287,497.00, destinado para el personal de las dependencias policiales que por razones de servicio especial cumplen funciones específicas, durante 
+														las 24 horas ininterrumpidas y/o laboran fuera del horario establecido.  												     	 	 											      												     	
+											     	</p>
+										      </td>
+										      <td>  
+										      		<a href="/PDF/RD/RD-2017/RD_005_2017.pdf" > Abrir <a/>  
+										      </td>
+										    </tr>
+										    										    								    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

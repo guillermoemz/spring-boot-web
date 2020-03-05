@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >RESOLUCIÓN DE LA COMANDANCIA GENERAL DE LA POLICÍA NACIONAL DEL PERÚ AÑO 2020</h3>
+				                    <br>
+				                    <br>
+				                    <br>
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">RCG Nº </th>
+										      <th class="text-left" scope="col" width="70%">SE RESUELVE :</th>									      
+										      <th class="text-left" scope="col" width="5%">PDF </th>
+										    </tr>
+										  </thead>
+										  <tbody>									  	
+										    <tr class="text-justify">									      
+										      <th scope="row">1</th>
+										      <td > <span class="font-weight-bold">RCG Nº 022-2020-CG PNP/EMG</span> de fecha 23ENE2020</td>																										
+										      <td>
+										      	<p>									      		
+											     	 	<span class="font-weight-bold">Artículo 1.-</span> Aprobar la conformación y actualización del Comité Especial, que desempeñará las funciones establecidas 
+											     	 	en el artículo 3 de la Resolución Ministerial Nº 629-2019, de fecha del 3 de mayo de 2019, que dirigirá el proceso de fortalecimiento, articulación, 
+											     	 	socialización y validación de la propuesta del "Plan Estratégico de Capacidades de la Policía Nacional del Perú al 2030 Mariano Santos Mateos"; cuyos 
+											     	 	miembros podrán designar su representante alterno:
+											      		<ul class="text-left">
+														    <li> Comandante General de la Policía Nacional del Perú, quien lo preside;</li>
+														    <li> Secretario Ejecutivo de la Policía Nacional del Perú, como Vocal;</li>
+														    <li> Director de Administración de la Policía Nacional del Perú, como Vocal;</li>
+														    <li> Director de Planeamiento Institucional de la Policía Nacional del Perú, como Secretario Técnico;</li>
+														    <li> Jefe de la División de Planeamiento Institucional de la Policía Nacional del Perú, como Vocal;</li>
+														    <li> Jefe del Gabinete de Asesores de la Alta Dirección del Ministerio del Interior, como Asesor;</li>
+														    <li> Director de la Oficina General de Planeamiento y Presupuesto del Ministerio del Interior, como Asesor;</li>
+													  	</ul>										     	
+											     </p>
+										      </td>
+										      <td>  <a href="/PDF/RCG/RCG-2020/RCG_022_2020.pdf" > Abrir <a/>  </td> 
+										      <!-- <td> 	<embed src="/PDF/RCG-2020/RCG_022_2020.pdf" type="application/pdf" width="100%" height="600px" /> 	</td> -->									      
+										    </tr>									    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

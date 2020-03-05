@@ -38,17 +38,50 @@ public class IndexController {
 		return "register";		
 	}
 	
-	@GetMapping("/practice")
-	public String practice(){
-
-		return "practice";		
-	}
 	
 	@GetMapping("/formDirector")
 	public String formDirector(){
 
 		return "formularioDirector";		
 	}
+	
+	// RCG 
+	@GetMapping("RCG_2020")
+	public String RCG_2020(){	return "RCG_2020";	}
+	
+	@GetMapping("/RCG_2019")
+	public String RCG_2019(){	return "RCG_2019";	}
+	
+	@GetMapping("/RCG_2018")
+	public String RCG_2018(){	return "RCG_2018";	}
+	
+	// RD 
+	@GetMapping("/RD_2019")
+	public String RD_2019(){	return "RD_2019";	}
+	
+	@GetMapping("/RD_2018")
+	public String RD_2018(){	return "RD_2018";	}
+	
+	@GetMapping("/RD_2017")
+	public String RD_2017(){	return "RD_2017";	}
+	
+	@GetMapping("/RD_2016")
+	public String RD_2016(){	return "RD_2016";	}
+	
+	@GetMapping("/RD_2015")
+	public String RD_2015(){	return "RD_2015";	}
+	
+	@GetMapping("/RD_2014")
+	public String RD_2014(){	return "RD_2014";	}
+	
+	@GetMapping("/RD_2013")
+	public String RD_2013(){	return "RD_2013";	}
+	
+	@GetMapping("/RD_2011")
+	public String RD_2011(){	return "RD_2011";	}
+	
+	@GetMapping("/RD_2008")
+	public String RD_2008(){	return "RD_2008";	}
 	
 	
 	@GetMapping("/usuario")

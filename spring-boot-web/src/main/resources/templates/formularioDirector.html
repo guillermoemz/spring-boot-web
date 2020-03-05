@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>INGRESAR A LA INTRANET DE LA INSPECTORÍA GENERAL PNP</title>
-        <link href="/css/styles.css" rel="stylesheet" type="text/css"></link>
-        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
-    </head>
-    <body >
-<!-- style="background-color: #7e7e7e"--> 
-        <div class="row text-center">
-            <div class="col-sm-6 col-sm-offset-3 mx-auto">
-                <div class="well" style="margin-top: 10%;">
-                    <h3 >COMUNICATE AL DIRECTOR</h3>
-                    <form role="form" id="contactForm" data-toggle="validator" class="shake">
-                        
-                        <div class="row text-left">
-                            <div class="form-group col-sm-12">
-                                <label for="name" class="h4">Asunto</label>
-                                <input type="text" class="form-control" id="name" placeholder="Ingrese el asunto" required data-error="NEW ERROR MESSAGE">
-                                <div class="help-block with-errors"></div>
-                            </div>            
-                        </div>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
 
-                        <div class="form-group text-left">
-                            <label for="message" class="h4">Mensaje</label>
-                            <textarea id="message" class="form-control" rows="5" placeholder="Aquí redacta tu comentario..." required></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-6 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >ESCRÍBELE AL DIRECTOR</h3>
+				                    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+				                        
+				                        <div class="row text-left">
+				                            <div class="form-group col-sm-12">
+				                                <label for="name" class="h4">Asunto</label>
+				                                <input type="text" class="form-control" id="name" placeholder="Ingrese el asunto" required data-error="NEW ERROR MESSAGE">
+				                                <div class="help-block with-errors"></div>
+				                            </div>            
+				                        </div>
+				
+				                        <div class="form-group text-left">
+				                            <label for="message" class="h4">Mensaje</label>
+				                            <textarea id="message" class="form-control" rows="5" placeholder="Aquí redacta tu comentario..." required></textarea>
+				                            <div class="help-block with-errors"></div>
+				                        </div>
+				
+				                        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right">Enviar</button>
+				                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+				                        <div class="clearfix"></div>
+				                    </form>
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
 
-                        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right">Enviar</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/scripts.js"></script>
-    </body>
+</body>
 </html>
 

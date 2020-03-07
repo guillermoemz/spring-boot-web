@@ -45,6 +45,18 @@ public class IndexController {
 		return "formularioDirector";		
 	}
 	
+	
+	
+	// PERSONAL PNP DE LA DIRECCION DE INSPECCIONES DE LA IG PNP 
+	@GetMapping("/OficialesPNP")
+	public String OficialesPNP(){	return "/Inscritos/OficialesPNP";	}
+
+	
+	@GetMapping("/SuboficialesPNP")
+	public String SuboficialesPNP(){	return "/Inscritos/SuboficialesPNP";	}
+		
+	
+	
 	// RCG 
 	@GetMapping("/RCG_2020")
 	public String RCG_2020(){	return "/Normas/RCG_PNP/RCG_2020";	}
@@ -52,8 +64,7 @@ public class IndexController {
 	@GetMapping("/RCG_2019")
 	public String RCG_2019(){	return "/Normas/RCG_PNP/RCG_2019";	}
 	
-	@GetMapping("/RCG_2018")
-	public String RCG_2018(){	return "/Normas/RCG_PNP/RCG_2018";	}
+	
 	
 	// RD 
 	@GetMapping("/RD_2019")
@@ -82,6 +93,24 @@ public class IndexController {
 	
 	@GetMapping("/RD_2008")
 	public String RD_2008(){	return "/Normas/RD_PNP/RD_2008";	}
+	
+	
+	
+	// Normas Complementarias
+	@GetMapping("/NormasComplementariasDS")
+	public String NormasComplementariasDS(){	return "/Normas/NormasComplementarias/DecretoSupremo";	}
+	
+	@GetMapping("/NormasComplementariasRM")
+	public String NormasComplementariasRM(){	return "/Normas/NormasComplementarias/ResolucionMinisterial";	}
+
+	@GetMapping("/NormasComplementariasRD")
+	public String NormasComplementariasRD(){	return "/Normas/NormasComplementarias/ResolucionesDirectoralesExternas";	}
+	
+	@GetMapping("/NormasComplementariasDL")
+	public String NormasComplementariasDL(){	return "/Normas/NormasComplementarias/DecretoLegislativos";	}
+
+
+	
 	
 	
 	@GetMapping("/usuario")

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >RESOLUCIONES MINISTERIALES</h3>
+				                    <br>			                    
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">RESOLUCIÓN MINISTERIAL</th>
+										      <th class="text-center" scope="col" width="70%">DESCRIPCIÓN</th>							      
+										      <th class="text-left" scope="col" width="5%">PDF</th>
+										    </tr>
+										  </thead>
+										  <tbody class="text-justify">									  	
+										    
+										    <tr>
+										  		  <th scope="row">1</th>
+											      <td > <span class="font-weight-bold">R.M. Nº 952-2018-IN</span> de fecha 14AGO2018</td>																										
+											      <td>																																		
+											      	  	<h6 class="font-weight-bold text-center"> MANUAL DE DERECHOS HUMANOS APLICADOS A LA FUNCIÓN POLICIAL </h6>	
+												     	 	
+												     	 	<span>SE RESUELVE: </span>
+												     	 	<br>
+												     	 	<span class="font-weight-bold">Artículo 1.- Aprobación del Reglamento </span>
+												     	 												     	 	
+												     	 	<p>																																
+												     	 	Aprobar el Manual de Derechos Humanos Aplicados a la Función Policial, el mismo que como anexo forma parte de la presente Resolución.
+												     		</p>
+											      </td>
+											      <td>  
+											      		<a href="/PDF/NormasComplementarias/RM/RM_952_2018_IN.pdf" > Abrir </a>  
+											      </td>
+										    </tr>
+									    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

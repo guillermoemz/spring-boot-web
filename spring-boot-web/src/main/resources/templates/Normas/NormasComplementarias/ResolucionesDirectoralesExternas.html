@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3> RESOLUCIONES DIRECTORALES </h3>
+				                    <br>			                    
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">RESOLUCIONES DIRECTORALES </th>
+										      <th class="text-center" scope="col" width="70%">DESCRIPCIÓN</th>							      
+										      <th class="text-left" scope="col" width="5%">PDF</th>
+										    </tr>
+										  </thead>
+										  <tbody class="text-justify">									  	
+										    
+										    <tr>
+										  		  <th scope="row">1</th>
+											      <td > <span class="font-weight-bold">R.D. Nº 002-2007-EF-77.15</span> de fecha 24ENE2007</td>																								
+											      <td>																																		
+											      	  	<h6 class="font-weight-bold text-center">DIRECTIVA DE TESORERÍA </h6>
+											      	  	<br>
+											     	 	<span class="font-weight-bold text-left">OBJETO </span>
+											     	 												     	 	
+											     	 	<p>																																					
+											     	 	Establecer las disposiciones y procedimientos generales relacionados con la ejecución financiera y demás operaciones de tesorería, además 
+											     	 	de las condiciones y plazos para el cierre de cada Año Fiscal, a ser aplicados por las Unidades Ejecutoras de los pliegos presupuestarios
+														del Gobierno Nacional y de los Gobiernos Regionales; así como por los Gobiernos Locales; en este último caso incluye disposiciones específicas 
+														que, adicionalmente, deben ser cumplidas por dicho nivel de gobierno.
+											     		</p>
+											      </td>
+											      <td>  
+											      		<a href="/PDF/NormasComplementarias/RD/RD_002_2007-EF_77_15.pdf" > Abrir </a>  
+											      </td>
+										    </tr>
+										    
+										    <tr>
+										  		  <th scope="row">2</th>
+											      <td > <span class="font-weight-bold">R.D. Nº 026-80-EF/77-15</span> de fecha 06MAY1980</td>																								
+											      <td>																																		
+											      	  	<h6 class="font-weight-bold text-center"> MINISTERIO DE ECONOMÍA Y FINANZAS - DIRECCIÓN NACIONAL DEL TESORO PÚBLICO </h6>
+											      	  	<h6 class="font-weight-bold text-center">NORMAS GENERALES DE TESORERÍA </h6>
+											      	  	<br>
+											     	 	<span class="text-left">SE RESUELVE </span>
+											     	 												     	 	
+											     	 	<p>																																
+											     	 	<span class="font-weight-bold">Artículo 1.- </span> Aprobar las siguientes Normas Generales del Sistema de Tesorería:
+											     	 	
+												     	 	<ul class="text-left">
+															    <li> NGT-01 Unidad de Caja</li>
+															    <li> NGT-02 Manejo de Fondos del Tesoro Público a través de subcuentas.</li>
+															    <li> NGT-03 Facultad para el manejo de cuentas y subcuentas bancarias.</li>
+															    <li> NGT-04 Apertura de cuentas y subcuentas bancarias</li>
+																<li> NGT-05 Uso del Fondo Para Pagos en Efectivo. </li>
+																<li> NGT-06 Uso del Fondo Fijo para Caja Chica. </li>
+																<li> NGT-07 Reposición oportuna del Fondo para pagos en Efectivo y del Fondo para Caja Chica. </li>
+																<li> NGT-08 Arqueos sorpresivos </li>																
+																<li> NGT-09 Transferencias de Fondos </li>
+																<li> NGT-10 Medidas de seguridad para el giro de cheques y traslado de fondos. </li>
+																<li> NGT-11 Cheques a nombre de la entidad. </li>
+																<li> NGT-12 Cambio de cheques personales. </li>
+																<li> NGT-13 Uso del sello fechador "pagado" </li>
+																<li> NGT-14 Conciliaciones de subcuentas del Tesoro Público. </li>
+																<li> NGT-15 Fianza de servidores. </li>															    
+													  		</ul>
+											     		</p>
+											      </td>
+											      <td>  
+											      		<a href="/PDF/NormasComplementarias/RD/RD_026_1980_EF_77_15.pdf" > Abrir </a>  
+											      </td>
+										    </tr>
+									    
+									    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

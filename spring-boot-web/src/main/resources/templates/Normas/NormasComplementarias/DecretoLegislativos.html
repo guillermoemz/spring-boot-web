@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3> DECRETOS LEGISLATIVOS </h3>
+				                    <br>			                    
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="25%">DECRETO LEGISLATIVOS</th>
+										      <th class="text-center" scope="col" width="70%">DESCRIPCIÓN</th>							      
+										      <th class="text-left" scope="col" width="5%">PDF</th>
+										    </tr>
+										  </thead>
+										  <tbody class="text-justify">									  	
+										    
+										    <tr>
+										  		  <th scope="row">1</th>
+											      <td > <span class="font-weight-bold">D.L. Nº 1340</span> de fecha 06ENE2017</td>																								
+											      <td>																																									
+											      	  	<h6 class="font-weight-bold text-center">DECRETO LEGISLATIVO QUE PERFECCIONA EL MARCO NORMATIVO DE LA POLICÍA NACIONAL DEL PERÚ PROHIBIENDO 
+											      	  											 EL USO DE INSTALACIONES POLICIALES COMO DEPÓSITOS VEHICULARES Y MODIFICANDO EL ARTÍCULO 17 DE LA 
+											      	  											 LEY 30264 
+														</h6>
+											      	  	<br>
+											     	 	<span class="font-weight-bold text-left">Artículo 1.- OBJETO </span>
+											     	 												     	 	
+											     	 	<p>																																												
+											     	 	El presente decreto legislativo tiene por objeto prohibir el uso de instalaciones policiales como depósitos vehiculares de cualquier clase 
+											     	 	y cubrir la brecha de proyectos de inversión pública en las materias de orden público y seguridad.
+											     		</p>
+											      </td>
+											      <td>  
+											      		<a href="/PDF/NormasComplementarias/DL/DL_1340.pdf" > Abrir </a>  
+											      </td>
+										    </tr>
+									    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

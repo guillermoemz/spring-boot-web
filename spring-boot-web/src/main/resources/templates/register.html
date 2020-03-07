@@ -33,16 +33,22 @@
                                         <form>
 
                                             <div class="form-row">
-                                                <div class="col col-md-6">
+                                                <div class="col col-md-4">
                                                     <div class="form-group">
                                                         <label class="font-weight-bold control-label mb-1" for="inputFirstName">Nombres</label>
-                                                        <input class="form-control py-4" id="inputFirstName" type="text" placeholder="Nombres Completos" />
+                                                        <input class="form-control py-4" id="inputFirstName" type="text" placeholder="Nombres" />
                                                     </div>
                                                 </div>
-                                                <div class="col col-md-6">
+                                                <div class="col col-md-4">
                                                     <div class="form-group">
-                                                        <label class="font-weight-bold control-label mb-1" for="inputLastApellidos">Apellidos</label>
-                                                        <input class="form-control py-4" id="inputLastApellidos" type="text" placeholder="Apellidos Completos" />
+                                                        <label class="font-weight-bold control-label mb-1" for="inputApellidoPaterno">Apellido Paterno</label>
+                                                        <input class="form-control py-4" id="inputApellidoPaterno" type="text" placeholder="Apellido Paterno" />
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="inputApellidoMaterno">Apellido Materno</label>
+                                                        <input class="form-control py-4" id="inputApellidoMaterno" type="text" placeholder="Apellido Materno" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -77,8 +83,24 @@
                                                         <label class="font-weight-bold control-label mb-1" for="numeroCIP">CIP</label>
                                                         <input class="form-control py-4" id="numeroCIP" type="text" placeholder="CIP" />
                                                     </div>
+                                                </div>
+                                                <div class="col col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="numeroDNI">DNI</label>
+                                                        <input class="form-control py-4" id="numeroDNI" type="text" placeholder="DNI" />
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold control-label mb-1" for="numeroMovil">Celular</label>
+                                                        <input class="form-control py-4" id="numeroMovil" type="text" placeholder="Número de Celular" />
+                                                    </div>
                                                 </div>		
-												<div class="col col-md-9">
+												
+											</div>
+											
+											<div class="form-row pt-2">
+												<div class="col col-md-12">
 													<div class="form-group">
                                                         <label class="font-weight-bold control-label mb-1" for="inputEmailAddress">Correo Electrónico</label>
                                                         <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Correo Electrónico" />
@@ -153,23 +175,37 @@
                     {
                         $("#selectgrados option").remove();
                         $("#selectgrados").append("<option value='1'>General PNP</option>");
-                        $("#selectgrados").append("<option value='2'>Coronel PNP</option>");
-                        $("#selectgrados").append("<option value='3'>Comandante PNP</option>");
-                        $("#selectgrados").append("<option value='4'>Mayor PNP</option>");
-                        $("#selectgrados").append("<option value='5'>Capitan PNP</option>");
-                        $("#selectgrados").append("<option value='6'>Teniente PNP</option>");
-                        $("#selectgrados").append("<option value='7'>Alferez PNP</option>");
+                        $("#selectgrados").append("<option value='2'>General S. PNP</option>");
+                        $("#selectgrados").append("<option value='3'>Coronel PNP</option>");
+                        $("#selectgrados").append("<option value='4'>Coronel S. PNP</option>");
+                        $("#selectgrados").append("<option value='5'>Comandante PNP</option>");
+                        $("#selectgrados").append("<option value='6'>Comandante S. PNP</option>");
+                        $("#selectgrados").append("<option value='7'>Mayor PNP</option>");
+                        $("#selectgrados").append("<option value='8'>Mayor S. PNP</option>");
+                        $("#selectgrados").append("<option value='9'>Capitan PNP</option>");
+                        $("#selectgrados").append("<option value='10'>Capitan S. PNP</option>");
+                        $("#selectgrados").append("<option value='11'>Teniente PNP</option>");
+                        $("#selectgrados").append("<option value='12'>Teniente S. PNP</option>");
+                        $("#selectgrados").append("<option value='13'>Alferez PNP</option>");
                     }
                     else{
                      $("#selectgrados option").remove();
                         $("#selectgrados").append("<option value='1'>SS PNP</option>");
-                        $("#selectgrados").append("<option value='2'>SB PNP</option>");
-                        $("#selectgrados").append("<option value='3'>ST1 PNP</option>");
-                        $("#selectgrados").append("<option value='4'>ST2 PNP</option>");
-                        $("#selectgrados").append("<option value='5'>ST3 PNP</option>");
-                        $("#selectgrados").append("<option value='6'>S1 PNP</option>");
-                        $("#selectgrados").append("<option value='7'>S2 PNP</option>");   
-                        $("#selectgrados").append("<option value='8'>S3 PNP</option>");   
+                        $("#selectgrados").append("<option value='2'>SS S. PNP</option>");
+                        $("#selectgrados").append("<option value='3'>SB PNP</option>");
+                        $("#selectgrados").append("<option value='4'>SB S. PNP</option>");
+                        $("#selectgrados").append("<option value='5'>ST1 PNP</option>");
+                        $("#selectgrados").append("<option value='6'>ST1 S. PNP</option>");
+                        $("#selectgrados").append("<option value='7'>ST2 PNP</option>");
+                        $("#selectgrados").append("<option value='8'>ST2 S. PNP</option>");
+                        $("#selectgrados").append("<option value='9'>ST3 PNP</option>");
+                        $("#selectgrados").append("<option value='10'>ST3 S. PNP</option>");
+                        $("#selectgrados").append("<option value='11'>S1 PNP</option>");
+                        $("#selectgrados").append("<option value='12'>S1 S. PNP</option>");
+                        $("#selectgrados").append("<option value='13'>S2 PNP</option>");   
+                        $("#selectgrados").append("<option value='14'>S2 S. PNP</option>");
+                        $("#selectgrados").append("<option value='15'>S3 PNP</option>");   
+                        $("#selectgrados").append("<option value='16'>S3 S. PNP</option>");
                     }
             });
         });

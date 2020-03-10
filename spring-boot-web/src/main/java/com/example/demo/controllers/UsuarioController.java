@@ -1,14 +1,33 @@
 package com.example.demo.controllers;
 
-import com.example.demo.models.Usuario;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.demo.models.dao.IUsuarioDao;
+import com.example.demo.models.entity.Usuario;
 
 @Controller
 @RequestMapping("/intranet_InspectoriaPNP") 
-public class IndexController {
+public class UsuarioController {
+	
+	@Autowired 
+	//@Qualifier("ClienteDaoJPA")
+	//--> para ser más detallado en la especificación  
+	private IUsuarioDao usuarioDao; 
+	
+	@RequestMapping(value="/listar", method=RequestMethod.GET)
+	public String listar(Model model)
+	{
+		model.addAttribute("titulo", "Listado de clientes");
+		model.addAttribute("usuarios", usuarioDao.findAll()); 
+		return "OficialesPNP";		
+	}
+	
 
 	@GetMapping("/index")
 	public String index(){
@@ -40,10 +59,11 @@ public class IndexController {
 	
 	
 	@GetMapping("/formDirector")
-	public String formDirector(){
-
-		return "formularioDirector";		
-	}
+	public String formDirector(){	return "formularioDirector";	}
+	
+	
+	@GetMapping("/cambiarPassword")
+	public String cambiarPassword(){	return "cambiarPassword";	} 
 	
 	
 	
@@ -63,6 +83,9 @@ public class IndexController {
 	
 	@GetMapping("/RCG_2019")
 	public String RCG_2019(){	return "/Normas/RCG_PNP/RCG_2019";	}
+	
+	@GetMapping("/RCG_all")
+	public String RCG_all(){	return "/Normas/RCG_PNP/RCG_all";	}
 	
 	
 	
@@ -93,7 +116,9 @@ public class IndexController {
 	
 	@GetMapping("/RD_2008")
 	public String RD_2008(){	return "/Normas/RD_PNP/RD_2008";	}
-	
+
+	@GetMapping("/RD_all")
+	public String RD_all(){		return "/Normas/RD_PNP/RD_all";		}
 	
 	
 	// Normas Complementarias
@@ -109,8 +134,10 @@ public class IndexController {
 	@GetMapping("/NormasComplementariasDL")
 	public String NormasComplementariasDL(){	return "/Normas/NormasComplementarias/DecretoLegislativos";	}
 
+	@GetMapping("/NormasComplementarias")
+	public String NormasComplementarias(){	return "/Normas/NormasComplementarias/Normas_all";	}
 
-	
+
 	
 	
 	@GetMapping("/usuario")

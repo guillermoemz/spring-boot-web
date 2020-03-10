@@ -1,13 +1,43 @@
-package com.example.demo.models;
+package com.example.demo.models.entity;
 
-public class Usuario {
+import java.io.Serializable;
+import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name="users") 
+public class Usuario implements Serializable { 
+
+	
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id; 
+	
+	
+	private static final long serialVersionUID = 1L;
+	
+	@Column(name="nombresPersonalPNP")
 	private String nombres;
+	
+	@Column(name="create_at")
+	@Temporal(TemporalType.DATE) 
+	private Date createAt;
+	 
 	private String apellidoPaterno;
 	private String apellidoMaterno;
 	private String jerarquia;
 	private String grado;
 	private String correoElectronico;
+	private String unidad_division;
 	private double CIP;
 	private double DNI;
 	private double celular;
@@ -45,6 +75,8 @@ public class Usuario {
 					   + "celular=" + celular + "]";
 	}
 
+
+	public void setId(Long id) {	this.id = id;	}	
 	public void setNombres(String nombres) {	this.nombres = nombres;		}
 	public void setApellidoPaterno(String apellidoPaterno) {	this.apellidoPaterno = apellidoPaterno;		}
 	public void setApellidoMaterno(String apellidoMaterno) {	this.apellidoMaterno = apellidoMaterno;		}
@@ -54,8 +86,10 @@ public class Usuario {
 	public void setCIP(double CIP) {	this.CIP = CIP;		}
 	public void setDNI(double DNI) {	this.DNI = DNI;		}
 	public void setCelular(double celular) {	this.celular = celular;	 }
+	public void setUnidad_division(String unidad_division) {	this.unidad_division = unidad_division;		}
 
 	
+	public Long getId() {		return id;		}
 	public String getNombres() {  	return nombres;		}
 	public String getApellidoPaterno() {	return apellidoPaterno;		}
 	public String getApellidoMaterno() {	return apellidoMaterno;		}
@@ -64,6 +98,7 @@ public class Usuario {
 	public double getCIP() {	return CIP;		}
 	public double getDNI() {	return DNI;		}
 	public double getCelular() {	return celular;		}
+	public String getUnidad_division() {	return unidad_division;		}
 
 	
 	public String getNombresApellidos(double CIP) {		

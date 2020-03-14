@@ -20,15 +20,6 @@ public class UsuarioController {
 	//--> para ser más detallado en la especificación  
 	private IUsuarioDao usuarioDao; 
 	
-	@RequestMapping(value="/listar", method=RequestMethod.GET)
-	public String listar(Model model)
-	{
-		model.addAttribute("titulo", "Listado de clientes");
-		model.addAttribute("usuarios", usuarioDao.findAll()); 
-		return "OficialesPNP";		
-	}
-	
-
 	@GetMapping("/index")
 	public String index(){
 
@@ -58,18 +49,41 @@ public class UsuarioController {
 	}
 	
 	
-	@GetMapping("/formDirector")
-	public String formDirector(){	return "formularioDirector";	}
+	@GetMapping("/formInspector")
+	public String formInspector(){	return "formularioInspector";	}
 	
+	@GetMapping("/formDirectorInvestigaciones")
+	public String formDirectorInvestigaciones(){	return "formularioDIR-INV";	}
+	
+	@GetMapping("/formDirectorInspecciones")
+	public String formDirectorInspecciones(){	return "formularioDIR-INSP";	}
 	
 	@GetMapping("/cambiarPassword")
 	public String cambiarPassword(){	return "cambiarPassword";	} 
 	
 	
+	@GetMapping("/lecturasInteres")
+	public String lecturasInteres(){	return "/Normas/lecturasInteres";	}
 	
+	
+	/*
 	// PERSONAL PNP DE LA DIRECCION DE INSPECCIONES DE LA IG PNP 
 	@GetMapping("/OficialesPNP")
-	public String OficialesPNP(){	return "/Inscritos/OficialesPNP";	}
+	public String OficialesPNP(){	
+	
+		return "/Inscritos/OficialesPNP";	
+	
+	}
+	*/
+	
+	//@RequestMapping(value="/OficialesPNP", method=RequestMethod.GET)
+	@GetMapping("/OficialesPNP")
+	public String OficialesPNP(Model model)
+	{
+		model.addAttribute("titulo", "Listado de clientes");
+		model.addAttribute("usuarios", usuarioDao.findAll()); 
+		return "/Inscritos/OficialesPNP";		
+	}
 
 	
 	@GetMapping("/SuboficialesPNP")

@@ -15,7 +15,6 @@ import javax.persistence.TemporalType;
 @Entity
 @Table(name="users") 
 public class Usuario implements Serializable { 
-
 	
 	
 	@Id
@@ -38,9 +37,14 @@ public class Usuario implements Serializable {
 	private String grado;
 	private String correoElectronico;
 	private String unidad_division;
-	private double CIP;
-	private double DNI;
-	private double celular;
+	private Integer CIP;
+	
+	@Column(nullable=true, name="num_DNI")
+	private Integer DNI;
+	
+	@Column(nullable=true, name="num_Celular")
+	private Integer celular;
+	
 	
 	public Usuario() {
 		super();
@@ -48,7 +52,7 @@ public class Usuario implements Serializable {
 	}
 	
 	public Usuario(String nombres, String apellidoPaterno, String apellidoMaterno, String jerarquia, String grado,   
-					String correoElectronico, double CIP, double DNI, double celular) 
+					String correoElectronico, int CIP, int DNI, int celular) 
 	{
 		super();
 		this.nombres = nombres;
@@ -83,9 +87,9 @@ public class Usuario implements Serializable {
 	public void setGrado(String grado) {	this.grado = grado;		}
 	public void setJerarquia(String jerarquia) {	this.jerarquia = jerarquia;		}
 	public void setCorreoElectronico(String correoElectronico) {		this.correoElectronico = correoElectronico;		}
-	public void setCIP(double CIP) {	this.CIP = CIP;		}
-	public void setDNI(double DNI) {	this.DNI = DNI;		}
-	public void setCelular(double celular) {	this.celular = celular;	 }
+	public void setCIP(Integer CIP) {	this.CIP = CIP;		}
+	public void setDNI(Integer DNI) {	this.DNI = DNI;		}
+	public void setCelular(Integer celular) {	this.celular = celular;	 }
 	public void setUnidad_division(String unidad_division) {	this.unidad_division = unidad_division;		}
 
 	

@@ -16,18 +16,16 @@
 			
 		<nav th:fragment="header" class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
 
-			<a class="navbar-brand" href="#">DIR-INSP IG PNP</a>
+			<a class="navbar-brand" href="#">IG PNP</a>
 				<button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#">
 					<i class="fas fa-bars"></i>
 				</button>
 		
-					
-			<!-- PENDIENTE  -->
-			<div class="row card col-6 mx-auto bg-warning">
-                   <div class="card-body">
-                   		<h6 class="text-danger text-center" >
-                        			“Preservar la disciplina, camino a la excelencia institucional.”
-                        </h6>
+			<div class="row card col-4.5 mx-auto bg-success">
+                   <div >
+                   		<span class="text-center text-white">
+                        			“NUESTRA MISIÓN, FORTALECER LA DISCIPLINA, Y TU COMPROMISO CONTRIBUIR A LA EXCELENCIA INSTITUCIONAL”
+                        </span>
                    </div>    
 			</div>
 			
@@ -76,94 +74,104 @@
 	
 					<div class="sb-sidenav-menu">
 						<div class="nav">
-							<div class="sb-sidenav-menu-heading"></div>
-							<a class="nav-link text-white" href="/intranet_InspectoriaPNP/formDirector"> <!-- <i class="far fa-address-card" style="font-size:24px;color:white"></i> -->
-								<i class="far fa-envelope mr-2"></i> Escríbele al Director
+							
+							<div class="sb-sidenav-menu-heading text-success">Escríbele al:</div>
+														
+							<a class="nav-link text-white" href="/intranet_InspectoriaPNP/formInspector"> <!-- <i class="far fa-address-card" style="font-size:24px;color:white"></i> -->
+								<i class="far fa-envelope mr-2"></i> Inspector General PNP
 							</a>
-	
-							<div class="sb-sidenav-menu-heading">Menu</div>
-	
-							<!--  MENU / INSCRITOS  -->
-							<a class="nav-link collapsed text-white" href="#"
-								data-toggle="collapse" data-target="#collapseLayouts"
-								aria-expanded="false" aria-controls="collapseLayouts"> <i
-								class="far fa-address-card mr-2"></i> Inscritos
+							
+							<a class="nav-link text-white" href="/intranet_InspectoriaPNP/formDirectorInvestigaciones">
+								<i class="far fa-envelope mr-2"></i> Director de Investigaciones
 							</a>
-	
-							<div class="collapse" id="collapseLayouts"
-								aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-								<nav class="sb-sidenav-menu-nested nav">
-									<a class="nav-link" href="/intranet_InspectoriaPNP/OficialesPNP">Oficiales PNP</a> 
-									<a class="nav-link" href="/intranet_InspectoriaPNP/SuboficialesPNP">SubOficiales PNP</a>
-								</nav>
-							</div>
-	
-	
-							<!-- MENU / DOCUMENTOS DIGITALES  -->
-							<a class="nav-link collapsed text-white" href="#"
-								data-toggle="collapse" data-target="#collapsePages"
-								aria-expanded="false" aria-controls="collapsePages"> <i
-								class="fas fa-book  mr-2"></i>Documentos digitales
+																													  
+							<a class="nav-link text-white" href="/intranet_InspectoriaPNP/formDirectorInspecciones">
+								<i class="far fa-envelope mr-2"></i> Director de Inspecciones 
 							</a>
+							
+														
+							<div class="sb-sidenav-menu-heading text-success">DIRECCIÓN DE INSPECCIONES</div>
 	
-							<div class="collapse" id="collapsePages"
-								aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
-								<nav class="sb-sidenav-menu-nested nav accordion"
-									id="sidenavAccordionPages">
-	
-									<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">Lecturas de interés</a> 
-									<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">RCG PNP 
-										<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
-									</a>
-									<div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"  data-parent="#sidenavAccordionPages">
-										<nav class="sb-sidenav-menu-nested nav">
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RCG_2020">Año 2020</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RCG_2019">Año 2019</a>											
-										</nav>
-									</div>
-	
-									<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError2" aria-expanded="false" aria-controls="pagesCollapseError2">RD PNP 
-										<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
-									</a>
-									<div class="collapse" id="pagesCollapseError2"
-										aria-labelledby="headingOne"
-										data-parent="#sidenavAccordionPages">
-										<nav class="sb-sidenav-menu-nested nav">
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2019">Año 2019</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2018">Año 2018</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2017">Año 2017</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2016">Año 2016</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2015">Año 2015</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2014">Año 2014</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2013">Año 2013</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2011">Año 2011</a> 
-											<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2008">Año 2008</a>
-										</nav>
-									</div>
-	
-									<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError3" aria-expanded="false" aria-controls="pagesCollapseError3">Normas Legales Complementarias 
-										<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
-									</a>
-									<div class="collapse" id="pagesCollapseError3" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages"> 
-										<nav class="sb-sidenav-menu-nested nav">
-											<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasDS">Decreto Supremo</a>
-											<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasRM">Resoluciones Ministeriales</a>											
-											<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasRD">Resoluciones Directorales</a>
-											<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasDL">Decreto Legislativo</a>
-											
-										</nav>
-									</div>
-	
-								</nav>
-							</div>
-	
-							<a class="nav-link text-white" href="/intranet_InspectoriaPNP/cambiarPassword"> 
-								<i class="fa fa-key mr-2"></i> Cambiar Contraseña
+							<a class="nav-link collapsed text-white" href="/intranet_InspectoriaPNP/lecturasInteres" data-toggle="collapse" 
+									data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth"> Lecturas de interés
 							</a> 
 							
-							<a class="nav-link" href="#"> <i class="fa fa-power-off sb-nav-link-icon mr-2" aria-hidden="true"></i>
-								Salir
+							
+							<a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">RCG PNP 
+								<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
 							</a>
+							<div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne"  >
+								<nav class="sb-sidenav-menu-nested nav">
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RCG_2020">Año 2020</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RCG_2019">Año 2019</a>											
+								</nav>
+							</div>
+
+							<a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#pagesCollapseError2" aria-expanded="false" aria-controls="pagesCollapseError2">RD PNP 
+								<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
+							</a>
+							<div class="collapse" id="pagesCollapseError2" aria-labelledby="headingOne" >
+								<nav class="sb-sidenav-menu-nested nav">
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2019">Año 2019</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2018">Año 2018</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2017">Año 2017</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2016">Año 2016</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2015">Año 2015</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2014">Año 2014</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2013">Año 2013</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2011">Año 2011</a> 
+									<a class="nav-link" href="/intranet_InspectoriaPNP/RD_2008">Año 2008</a>
+								</nav>
+							</div>
+
+							<a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#pagesCollapseError3" aria-expanded="false" aria-controls="pagesCollapseError3">Normas Legales Complementarias 
+								<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
+							</a>
+							<div class="collapse" id="pagesCollapseError3" aria-labelledby="headingOne" > 
+								<nav class="sb-sidenav-menu-nested nav">
+									<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasDS">Decreto Supremo</a>
+									<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasRM">Resoluciones Ministeriales</a>											
+									<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasRD">Resoluciones Directorales</a>
+									<a class="nav-link" href="/intranet_InspectoriaPNP/NormasComplementariasDL">Decreto Legislativo</a>
+								</nav>
+							</div>
+							
+							<div class="sb-sidenav-menu-heading text-success">DIRECCIÓN DE INVESTIGACIONES</div>
+							
+							<a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#pagesCollapseError4" aria-expanded="false" aria-controls="pagesCollapseError4">Resoluciones de nombramiento  
+								<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
+							</a>
+							<div class="collapse" id="pagesCollapseError4" aria-labelledby="headingOne"  >
+								<nav class="sb-sidenav-menu-nested nav">
+									<a class="nav-link" href="#">Jefes Oficina de Disciplina</a> 
+									<a class="nav-link" href="#">Jefes Inspectoría Descentralizada</a>											
+									<a class="nav-link" href="#">Jefes Inspectorías Macro-Regionales</a>
+								</nav>
+							</div>
+							
+							<a class="nav-link collapsed text-white" href="#" data-toggle="collapse" data-target="#pagesCollapseError5" aria-expanded="false" aria-controls="pagesCollapseError5">
+									Resoluciones de creación de los órganos 
+								<i class="sb-sidenav-collapse-arrow fas fa-angle-down"></i>
+							</a>
+							<div class="collapse" id="pagesCollapseError5" aria-labelledby="headingOne"  >
+								<nav class="sb-sidenav-menu-nested nav">
+									<a class="nav-link" href="#">Órganos de Investigación</a> 
+									<a class="nav-link" href="#">Órganos de Decisión</a>
+								</nav>
+							</div>
+								
+							<div class="sb-sidenav-menu-heading text-success">Inscritos</div>
+													
+								<a class="nav-link text-white" href="/intranet_InspectoriaPNP/OficialesPNP">Oficiales PNP</a> 
+								<a class="nav-link text-white" href="/intranet_InspectoriaPNP/SuboficialesPNP">Suboficiales PNP</a>
+								<a class="nav-link text-white" href="#">Civil</a>
+
+							
+							<div class="sb-sidenav-menu-heading text-success">Perfil Usuario</div>
+							
+								<a class="nav-link text-white" href="/intranet_InspectoriaPNP/cambiarPassword">	Actualizar Datos	</a>
+								<a class="nav-link text-white" href="/intranet_InspectoriaPNP/cambiarPassword">	Cambiar Contraseña	</a>
+								<a class="nav-link text-white" href="#">	 Salir	</a>
 						</div>
 					</div>
 	

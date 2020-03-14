@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-9 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    <h3 >LECTURA DE INTERÉS - POLICÍA NACIONAL DEL PERÚ</h3>
+				                    <br>				                    
+				                    <div class="table-responsive">
+					                    <table class="table table-bordered" style="width:100%">
+										  <thead>
+										    <tr class="font-weight-bold bg-success text-white">
+										      <th scope="col">Item</th>
+										      <th class="text-center" scope="col" width="65%">TÍTULO </th>
+										      <th class="text-left" scope="col" width="30%">AUTOR </th>									      
+										      <th class="text-left" scope="col" width="5%">PDF </th>
+										    </tr>
+										  </thead>
+										  <tbody class="text-justify">	
+										  								  	
+										    <tr>									      
+										      <th scope="row">1</th>
+										      <td > <span class="font-weight-bold">POLICÍA, ACCOUNTABILITY Y CONTROL INTERNO: LÍNEAS DE ACCIÓN PARA UN MEJOR DESEMPEÑO POLICIAL  </span> </td>																										
+										      <td>	<span> Ph.D./Mg. PATRICIO TUDELA POBLETE 	</span></td>
+										      <td>  <a href="/PDF/lecturasInteres/4-lineas-de-accion-para-un-mejor-desempeno-policial.pdf"> Abrir 	</a></td>
+										    </tr>
+						    
+										  </tbody>
+									  </table>
+				                    </div>
+				                    
+				                    
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>

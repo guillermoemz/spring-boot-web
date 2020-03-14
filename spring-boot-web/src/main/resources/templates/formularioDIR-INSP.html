@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<meta charset="utf-8" />
+<head th:replace="layout/layout :: head"></head>
+<body >
+		
+		<nav th:replace="layout/layout :: header" id="layoutSidenav"></nav>		
+		
+		<div id="layoutSidenav">
+		<div th:replace="layout/layout :: sidenav">	</div>
+
+			<div id="layoutSidenav_content">
+				<main>
+					<div class="container-fluid">
+						<div class="row text-center">        	
+				            <div class="col-sm-6 col-sm-offset-3 mx-auto">
+				                <div class="well" style="margin-top: 10%;">
+				                    				                    
+				                    <div class="row mx-auto">				            						            		
+					            		<div class="col-9 text-justify">
+					            			<h3 class="font-weight-bold mt-5">DIRECTOR DE INSPECCIONES DE LA INSPECTORÍA GENERAL PNP</h3>
+					                    </div>					                    
+					                    <div class="col-3" style="margin-top: -5%;">
+			                                <img src="/img/General_BAELLA.jpg" alt="Card image cap" >
+	                            		</div>				            		
+				            		</div>
+				                    
+				                    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+				                        
+				                        <div class="row text-left">
+				                            <div class="form-group col-sm-12">
+				                                <label for="name" class="h4">Asunto</label>
+				                                <input type="text" class="form-control" id="name" placeholder="Ingrese el asunto" required data-error="NEW ERROR MESSAGE">
+				                                <div class="help-block with-errors"></div>
+				                            </div>            
+				                        </div>
+				
+				                        <div class="form-group text-left">
+				                            <label for="message" class="h4">Mensaje</label>
+				                            <textarea id="message" class="form-control" rows="5" placeholder="Aquí redacta tu comentario..." required></textarea>
+				                            <div class="help-block with-errors"></div>
+				                        </div>
+				
+				                        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right">Enviar</button>
+				                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+				                        <div class="clearfix"></div>
+				                        
+				                        <br>
+				                        <div class="form-group">
+										    <!-- <label for="exampleFormControlFile1">Ejemplo</label> -->
+										    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  										</div>
+				                    </form>
+
+				                </div>
+				            </div>	        
+			        	</div>
+					</div>
+				</main>
+				<footer th:replace="layout/layout :: footer"></footer>		
+			</div>				
+	     </div>
+
+</body>
+</html>
+
